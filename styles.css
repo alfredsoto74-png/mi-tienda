@@ -8,7 +8,8 @@ a{text-decoration:none;color:inherit}
 .sitenav a.on,.sitenav a:hover{opacity:1;font-weight:600}
 .block{position:relative;overflow:hidden}
 .wrap{display:flex;width:100%;max-width:none;margin:0;height:100%}
-.inner{overflow:hidden}
+.only-pc .wrap{justify-content:center!important}
+.inner{overflow:hidden;max-width:1280px}
 .bg{position:absolute;inset:0;background-position:center;background-repeat:no-repeat}
 .carousel{position:absolute;inset:0}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
@@ -70,10 +71,13 @@ a{text-decoration:none;color:inherit}
 /* ---- ESCALADO AUTOMATICO: el diseno siempre se ve COMPLETO y SIN
    margenes a los lados, en 1280, 1366, 1600, 1920 o cualquier pantalla ---- */
 html,body{width:100%;max-width:100%;overflow-x:hidden}
-.view{transform-origin:top left}
-.view{margin:0 auto}
-.only-pc{width:1280px;zoom:calc(100vw / 1280)}
-.only-mb{display:none;width:440px;zoom:calc(100vw / 440)}
+.view{transform-origin:top left;margin:0 auto;width:100%}
+/* El diseno se hace sobre un lienzo de 1280px: en pantallas mas grandes
+   NUNCA se agranda (los campos, logos y botones conservan su tamano real,
+   igual que en el programa) y los fondos siguen ocupando todo el ancho.
+   En pantallas mas chicas se reduce proporcional, sin bordes ni margenes. */
+.only-pc{width:100%}
+.only-mb{display:none;width:440px}
 /* En el telefono: si existe diseno de movil se muestra SOLO ese;
    si no existe, se muestra el de PC reducido pero completo. */
 @media(max-width:820px){
