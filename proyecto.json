@@ -94,7 +94,7 @@
             },
             {
               "type": "searchbtn",
-              "relx": 0.6508,
+              "relx": 0.5789,
               "rely": 0.2727,
               "w": 41,
               "h": 41,
@@ -223,11 +223,11 @@
             },
             {
               "type": "logo",
-              "relx": 0.0141,
+              "relx": 0.01,
               "rely": 0.0,
               "w": 192,
               "h": 104,
-              "bg": "",
+              "bg": "#ffffff",
               "fg": "#ffffff",
               "radius": 16,
               "border_w": 0,
@@ -261,7 +261,7 @@
                 "facebook": "",
                 "tiktok": "",
                 "path": "C:/Users/So_Matatan/Desktop/descargar.png",
-                "target": ""
+                "target": "Portada (inicio)"
               }
             }
           ],
@@ -522,8 +522,8 @@
           "elements": [
             {
               "type": "photo",
-              "relx": 0.1117,
-              "rely": 0.0333,
+              "relx": 0.1125,
+              "rely": 0.0267,
               "w": 100,
               "h": 100,
               "bg": "#ffffff",
@@ -614,8 +614,8 @@
             },
             {
               "type": "photo",
-              "relx": 0.2094,
-              "rely": 0.0333,
+              "relx": 0.2066,
+              "rely": 0.0267,
               "w": 100,
               "h": 100,
               "bg": "#ffffff",
@@ -1974,7 +1974,7 @@
             },
             {
               "type": "searchbtn",
-              "relx": 0.6508,
+              "relx": 0.5789,
               "rely": 0.2727,
               "w": 41,
               "h": 41,
@@ -2103,11 +2103,11 @@
             },
             {
               "type": "logo",
-              "relx": 0.0141,
+              "relx": 0.01,
               "rely": 0.0,
               "w": 192,
               "h": 104,
-              "bg": "",
+              "bg": "#ffffff",
               "fg": "#ffffff",
               "radius": 16,
               "border_w": 0,
@@ -2141,7 +2141,7 @@
                 "facebook": "",
                 "tiktok": "",
                 "path": "C:/Users/So_Matatan/Desktop/descargar.png",
-                "target": ""
+                "target": "Portada (inicio)"
               }
             }
           ],
@@ -3675,7 +3675,7 @@
             },
             {
               "type": "searchbtn",
-              "relx": 0.6508,
+              "relx": 0.5789,
               "rely": 0.2727,
               "w": 41,
               "h": 41,
@@ -3804,11 +3804,11 @@
             },
             {
               "type": "logo",
-              "relx": 0.0141,
+              "relx": 0.01,
               "rely": 0.0,
               "w": 192,
               "h": 104,
-              "bg": "",
+              "bg": "#ffffff",
               "fg": "#ffffff",
               "radius": 16,
               "border_w": 0,
@@ -3842,7 +3842,7 @@
                 "facebook": "",
                 "tiktok": "",
                 "path": "C:/Users/So_Matatan/Desktop/descargar.png",
-                "target": ""
+                "target": "Portada (inicio)"
               }
             }
           ],
@@ -4385,7 +4385,7 @@
             },
             {
               "type": "searchbtn",
-              "relx": 0.6508,
+              "relx": 0.5789,
               "rely": 0.2727,
               "w": 41,
               "h": 41,
@@ -4514,11 +4514,11 @@
             },
             {
               "type": "logo",
-              "relx": 0.0141,
+              "relx": 0.01,
               "rely": 0.0,
               "w": 192,
               "h": 104,
-              "bg": "",
+              "bg": "#ffffff",
               "fg": "#ffffff",
               "radius": 16,
               "border_w": 0,
@@ -4552,7 +4552,7 @@
                 "facebook": "",
                 "tiktok": "",
                 "path": "C:/Users/So_Matatan/Desktop/descargar.png",
-                "target": ""
+                "target": "Portada (inicio)"
               }
             }
           ],

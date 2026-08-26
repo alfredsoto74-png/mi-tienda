@@ -7,7 +7,7 @@ a{text-decoration:none;color:inherit}
 .sitenav a{opacity:.75}
 .sitenav a.on,.sitenav a:hover{opacity:1;font-weight:600}
 .block{position:relative;overflow:hidden}
-.wrap{display:flex;width:100%;max-width:1280px;margin:0 auto;height:100%}
+.wrap{display:flex;width:100%;max-width:none;margin:0;height:100%}
 .inner{overflow:hidden}
 .bg{position:absolute;inset:0;background-position:center;background-repeat:no-repeat}
 .carousel{position:absolute;inset:0}
@@ -62,12 +62,22 @@ a{text-decoration:none;color:inherit}
   display:flex;align-items:center;justify-content:center;gap:8px}
 .prod .pbtn{display:flex;align-items:center;justify-content:center;text-decoration:none}
 .prod .pbtn:hover,.prod button:hover{filter:brightness(1.08)}
-.only-mb{display:none}
+/* ---- ESCALADO AUTOMATICO: el diseno siempre se ve COMPLETO y SIN
+   margenes a los lados, en 1280, 1366, 1600, 1920 o cualquier pantalla ---- */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+.view{transform-origin:top left}
+.only-pc{width:1280px;zoom:calc(100vw / 1280)}
+.only-mb{display:none;width:440px;zoom:calc(100vw / 440)}
+/* En el telefono: si existe diseno de movil se muestra SOLO ese;
+   si no existe, se muestra el de PC reducido pero completo. */
 @media(max-width:820px){
-  .inner{width:100%!important;margin:0!important}
-  .cats{grid-template-columns:repeat(2,minmax(0,1fr))!important}
-  .only-pc{display:none}
-  .only-mb{display:block}
+  body.has-mb .only-pc{display:none!important}
+  body.has-mb .only-mb{display:block}
+}
+/* En la PC nunca se ve la vista de movil */
+@media(min-width:821px){
+  .only-mb{display:none!important}
+  .only-pc{display:block}
 }
 /* ---- carrito ---- */
 #cart-root{padding:22px 18px;max-width:1100px;margin:0 auto}
