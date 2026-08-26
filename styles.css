@@ -10,7 +10,7 @@ a{text-decoration:none;color:inherit}
 /* Fondo y banner siempre de borde a borde; solo el contenido usa el lienzo central. */
 .wrap{position:relative;z-index:2;display:flex;width:100%;max-width:none;margin:0;height:100%}
 .only-pc .wrap{justify-content:center!important}
-.inner{position:relative;overflow:hidden;max-width:1600px}
+.inner{position:relative;overflow:hidden;max-width:1906px}
 .bg{position:absolute;z-index:0;inset:0;width:100%;height:100%;background-position:center;background-repeat:no-repeat}
 .carousel{position:absolute;z-index:0;inset:0;width:100%;height:100%}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
