@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrito</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="sitenav"><a href="index.html">Portada (inicio)</a><a href="apartado-viveres.html">VIVERES</a><a href="carrito.html" class="on">Carrito</a></nav>
+<section class="block" style="min-height:88px;background:#0000ff;"><div class="wrap" style="justify-content:center;"><div class="inner" style="width:100%;min-height:88px;position:relative;"><div class="el search" style="left:29.0000%;top:25.0000%;width:466px;height:46px;border-radius:999px;color:#111827;font-size:15px;background:#ffffff;box-shadow:0 8px 20px rgba(0,0,0,.22);"><input type="text" placeholder="Buscar productos" style="font-size:15px;color:#111827"></div><div class="el btn" style="left:66.0156%;top:21.5909%;width:52px;height:52px;border-radius:999px;color:#ffffff;font-size:14px;background:#ff8000;box-shadow:0 8px 20px rgba(0,0,0,.22);"><span class="ico" style="font-size:18px">🔍</span></div><div class="el btn" style="left:1.0000%;top:25.0000%;width:52px;height:52px;border-radius:999px;color:#111827;font-size:14px;background:#ffffff;box-shadow:0 8px 20px rgba(0,0,0,.22);"><span class="ico" style="font-size:18px">☰</span></div><a href="carrito.html" class="el btn" style="left:93.0000%;top:25.0000%;width:52px;height:52px;border-radius:999px;color:#111827;font-size:13px;background:#ffffff;box-shadow:0 8px 20px rgba(0,0,0,.22);"><span class="ico" style="font-size:22px">🛒</span></a><div class="el logo" style="left:8.3594%;top:0.0000%;width:192px;height:104px;border-radius:16px;color:#ffffff;font-size:90px;background:transparent;"><img src="assets/0_descargar.png" alt="logo"></div></div></div></section>
+<script>
+document.querySelectorAll('.carousel').forEach(function(c){
+  var s=c.querySelectorAll('.slide'), i=0, ms=parseInt(c.dataset.ms||'4000',10);
+  if(s.length<2) return;
+  setInterval(function(){ s[i].classList.remove('on'); i=(i+1)%s.length;
+    s[i].classList.add('on'); }, ms);
+});
+</script>
+</body>
+</html>
