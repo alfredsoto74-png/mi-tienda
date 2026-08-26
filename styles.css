@@ -33,6 +33,11 @@ a{text-decoration:none;color:inherit}
 .el.photo{background:transparent!important;box-shadow:none!important}
 .el.card img,.el.photo img{max-width:100%;max-height:100%;object-fit:contain;border:0}
 .el.btn.addcart{border:0;cursor:pointer;font-weight:700}
+.el.navmenu{flex-direction:column;align-items:stretch;justify-content:flex-start;
+  gap:6px;padding:12px;overflow:auto}
+.el.navmenu a{display:block;padding:8px 12px;border-radius:10px;font-weight:700;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.el.navmenu a:hover{background:rgba(0,0,0,.08)}
 .el.social{gap:14px;font-size:16px}
 .el.text{background:transparent!important;box-shadow:none!important;font-weight:700}
 .plain{display:block}
@@ -66,8 +71,9 @@ a{text-decoration:none;color:inherit}
    margenes a los lados, en 1280, 1366, 1600, 1920 o cualquier pantalla ---- */
 html,body{width:100%;max-width:100%;overflow-x:hidden}
 .view{transform-origin:top left}
-.only-pc{width:1280px;zoom:calc(100vw / 1280)}
-.only-mb{display:none;width:440px;zoom:calc(100vw / 440)}
+.view{margin:0 auto}
+.only-pc{width:1280px;zoom:min(1, calc(100vw / 1280))}
+.only-mb{display:none;width:440px;zoom:min(1, calc(100vw / 440))}
 /* En el telefono: si existe diseno de movil se muestra SOLO ese;
    si no existe, se muestra el de PC reducido pero completo. */
 @media(max-width:820px){
