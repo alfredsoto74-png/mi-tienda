@@ -6,12 +6,13 @@ a{text-decoration:none;color:inherit}
   font-size:13px;flex-wrap:wrap}
 .sitenav a{opacity:.75}
 .sitenav a.on,.sitenav a:hover{opacity:1;font-weight:600}
-.block{position:relative;overflow:hidden}
-.wrap{display:flex;width:100%;max-width:none;margin:0;height:100%}
+.block{position:relative;overflow:hidden;width:100%}
+/* Fondo y banner siempre de borde a borde; solo el contenido usa el lienzo central. */
+.wrap{position:relative;z-index:2;display:flex;width:100%;max-width:none;margin:0;height:100%}
 .only-pc .wrap{justify-content:center!important}
-.inner{overflow:hidden;max-width:1280px}
-.bg{position:absolute;inset:0;background-position:center;background-repeat:no-repeat}
-.carousel{position:absolute;inset:0}
+.inner{position:relative;overflow:hidden;max-width:1280px}
+.bg{position:absolute;z-index:0;inset:0;width:100%;height:100%;background-position:center;background-repeat:no-repeat}
+.carousel{position:absolute;z-index:0;inset:0;width:100%;height:100%}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
 .slide.on{opacity:1}
 .mq{position:relative;overflow:hidden;display:flex;align-items:center;width:100%}
@@ -68,8 +69,9 @@ a{text-decoration:none;color:inherit}
   display:flex;align-items:center;justify-content:center;gap:8px}
 .prod .pbtn{display:flex;align-items:center;justify-content:center;text-decoration:none}
 .prod .pbtn:hover,.prod button:hover{filter:brightness(1.08)}
-/* ---- ESCALADO AUTOMATICO: el diseno siempre se ve COMPLETO y SIN
-   margenes a los lados, en 1280, 1366, 1600, 1920 o cualquier pantalla ---- */
+/* ---- ESCALADO AUTOMATICO: fondos y banners ocupan TODO el monitor;
+   el contenido conserva el tamano compacto del editor en 1280, 1366, 1600,
+   1920 o cualquier pantalla, y se reduce completo en pantallas menores. ---- */
 html,body{width:100%;max-width:100%;overflow-x:hidden}
 .view{transform-origin:top left;margin:0 auto;width:100%}
 /* El diseno se hace sobre un lienzo de 1280px: en pantallas mas grandes
