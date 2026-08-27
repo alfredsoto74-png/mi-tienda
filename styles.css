@@ -45,6 +45,44 @@ a{text-decoration:none;color:inherit}
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .el.navmenu a:hover{background:rgba(0,0,0,.08)}
 .el.social{gap:14px;font-size:16px}
+/* ---- boton del carrito con plantilla ---- */
+.el.cartbtn,.el.accbtn{display:block;cursor:pointer;overflow:visible}
+.el.cartbtn span,.el.accbtn span{position:absolute;white-space:nowrap;line-height:1}
+.el.cartbtn .cico img,.el.accbtn .aico img{height:1.2em;vertical-align:middle}
+.el.cartbtn .cbadge2{display:flex;align-items:center;justify-content:center;
+  border-radius:999px;font-weight:800;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.el.cartbtn .ctotal,.el.accbtn .atitle{font-weight:700}
+.el.cartbtn .cdrop{display:none;position:absolute;top:calc(100% + 10px);right:0;
+  min-width:260px;background:#fff;color:#111827;border-radius:14px;padding:10px;
+  box-shadow:0 14px 40px rgba(15,23,42,.22);z-index:60;text-align:left}
+.el.cartbtn .cdrop.on{display:block}
+.cdrop-i{display:flex;justify-content:space-between;gap:12px;font-size:12px;
+  padding:6px 8px;border-bottom:1px solid #eef1f6}
+.cdrop-i .cdn{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cdrop-i .cdp{font-weight:700}
+.cdrop-e{font-size:12px;padding:10px;color:#6b7280}
+.cdrop-t{display:flex;justify-content:space-between;font-size:13px;font-weight:800;
+  padding:8px}
+.cdrop-go{display:block;text-align:center;background:#0f7a3d;color:#fff;
+  border-radius:10px;padding:8px;font-size:12px;font-weight:700}
+/* ---- ventana de registro / iniciar sesion ---- */
+.authwrap{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);
+  z-index:120;align-items:center;justify-content:center;padding:18px}
+.authwrap.on{display:flex}
+.authcard{position:relative;background:#fff;color:#111827;border-radius:18px;
+  padding:22px;width:340px;max-width:100%;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.authx{position:absolute;right:12px;top:8px;border:0;background:transparent;
+  font-size:22px;cursor:pointer;color:#6b7280}
+.authtabs{display:flex;gap:8px;margin-bottom:14px}
+.authtab{flex:1;border:0;background:#f1f5f9;border-radius:10px;padding:9px;
+  font-weight:700;font-size:13px;cursor:pointer;color:#475569}
+.authtab.on{background:#0f7a3d;color:#fff}
+.authbody input{width:100%;border:1px solid #e2e8f0;border-radius:10px;padding:11px;
+  margin-bottom:10px;font-size:14px;outline:0}
+.authgo{width:100%;border:0;border-radius:10px;padding:12px;background:#111827;
+  color:#fff;font-weight:700;cursor:pointer;font-size:14px}
+.authhi{font-size:16px;font-weight:800;margin-bottom:4px}
+.authsm{font-size:11px;color:#6b7280;margin-top:8px}
 .el.text{background:transparent!important;box-shadow:none!important;font-weight:700}
 .plain{display:block}
 .blocktext{position:relative;padding:26px}
