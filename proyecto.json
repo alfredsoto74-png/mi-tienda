@@ -372,7 +372,7 @@
         },
         {
           "type": "banner",
-          "height": 400,
+          "height": 500,
           "width": 100,
           "side": 0,
           "align": "izquierda",
@@ -447,7 +447,8 @@
           "products": [],
           "slides": [
             "C:/Users/So_Matatan/Desktop/MEGA OFERTA (1).png",
-            "C:/Users/So_Matatan/Desktop/bannerd.png"
+            "C:/Users/So_Matatan/Desktop/bannerd.png",
+            "C:/Users/So_Matatan/Desktop/25% menos 25% 25% menos 25%.mp4"
           ],
           "seconds": 2,
           "transition": "slide",
