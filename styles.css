@@ -20,7 +20,10 @@ a{text-decoration:none;color:inherit}
 .carousel.tr-slide .slide{transform:translateX(4%);transition:opacity .7s ease,transform .7s ease}
 .carousel.tr-slide .slide.on{transform:translateX(0)}
 .mq{position:relative;overflow:hidden;display:flex;align-items:center;width:100%}
-.el.mqbar{overflow:hidden;padding:0;justify-content:flex-start}
+.el.mqbar{overflow:hidden;padding:0;margin:0;justify-content:flex-start;
+  background:transparent;border:0;box-shadow:none;white-space:nowrap;font-weight:700}
+.mq-track.mq-rev{animation-name:mqmove-rev}
+@keyframes mqmove-rev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 .mq-track{display:inline-flex;white-space:nowrap;will-change:transform;
   animation-name:mqmove;animation-timing-function:linear;
   animation-iteration-count:infinite}
