@@ -105,6 +105,12 @@ a{text-decoration:none;color:inherit}
 .cat .catname{display:block;margin-top:8px;font-weight:600;line-height:1.15}
 
 .prods{position:relative;display:flex;flex-wrap:wrap;gap:18px;padding:22px 26px}
+.prods.abs{position:absolute;left:0;top:0;right:0;bottom:0;display:block;padding:0;gap:0}
+.prodpos{position:absolute}
+a.plain.textlink{text-decoration:none;color:inherit;display:contents;cursor:pointer}
+a.plain.textlink .el.text{cursor:pointer}
+@media(max-width:820px){.prods.abs{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:16px;padding:16px 12px}
+.prods.abs .prodpos{position:relative!important;left:auto!important;top:auto!important}}
 .prod{position:relative;box-shadow:0 10px 26px rgba(15,23,42,.12)}
 .p-img{position:absolute;overflow:hidden;display:flex;align-items:center;
   justify-content:center}
